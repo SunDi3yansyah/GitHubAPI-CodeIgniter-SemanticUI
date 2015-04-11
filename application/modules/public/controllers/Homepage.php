@@ -10,8 +10,8 @@ class Homepage extends CI_Controller {
 
 	function index()
 	{
-		$user = 'SunDi3yansyah';
-		$token = '013bd32b2c4b186b072c98a98b84b3cb6e149f84';
+		$user = 'YOUR-USERNAME';
+		$token = 'YOUR-TOKEN-APP';
 		$curl_url = 'https://api.github.com/users/' . $user . '/repos';
 		$curl_token_auth = 'Authorization: token ' . $token;
 		$ch = curl_init($curl_url);
