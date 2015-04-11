@@ -24,4 +24,4 @@ This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
     - ```bower install SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI```
 
 ## License
-- [MIT](blob/master/LICENSE)
+- [MIT](LICENSE)
