@@ -1,0 +1,30 @@
+{
+  "name": "SunDi3yansyah",
+  "description": "Designed and built with GitHub API - CodeIgniter - Semantic UI by @SunDi3yansyah",
+  "homepage": "http://sundi3yansyah.herokuapp.com",
+  "version": "0.0.1",
+  "moduleType": [
+    "amd"
+  ],
+  "authors": [
+    "SunDi3yansyah (http://sundi3yansyah.com)"
+  ],
+  "keywords": [
+    "sundi3yansyah",
+    "codeigniter",
+    "semantic",
+    "github api",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Semantic-UI": "~1.11.6"
+  }
+}
