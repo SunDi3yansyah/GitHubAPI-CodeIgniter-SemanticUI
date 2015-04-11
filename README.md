@@ -39,7 +39,7 @@ This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
     ```
     - Change the value with your token and username from GitHub
     - Open this link https://github.com/settings/applications
-    - anda akan melihat kotak bagian __Personal access tokens__
+    - you will see a box section __Personal access tokens__
     - Click button __Generate new token__
     - Enter your desired __Token description__
     - Enter your desired __Select scopes__
