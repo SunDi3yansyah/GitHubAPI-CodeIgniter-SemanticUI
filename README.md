@@ -17,11 +17,34 @@ This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
 - Clone repository:
     - Open your command line.
     - Move to your web server directory.
-    - ```git clone https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI```
+    ```
+    git clone https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI
+    ```
 - Bower
     - Open your command line.
     - Move to your web server directory.
-    - ```bower install SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI```
+    ```
+    bower install SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI
+    ```
+
+- NEXT
+    - Edit file
+    ```
+    https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI/blob/master/application/modules/public/controllers/Homepage.php
+    ```
+    - You will see code like this
+    ```
+    $user = 'YOUR-USERNAME';
+    $token = 'YOUR-TOKEN-APP';
+    ```
+    - Change the value with your token and username from GitHub
+    - Open this link https://github.com/settings/applications
+    - anda akan melihat kotak bagian __Personal access tokens__
+    - Click button __Generate new token__
+    - Enter your desired __Token description__
+    - Enter your desired __Select scopes__
+    - Click __Generate token__
+    - Copy token that you just made to the file __Homepage.php__
 
 ## License
 - [MIT](LICENSE)
