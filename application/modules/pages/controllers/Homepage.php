@@ -1,4 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+ * @package		GitHubAPI-CodeIgniter-SemanticUI
+ * @author		Cahyadi Triyansyah (http://sundi3yansyah.com)
+ * @version		0.1
+ * @license		MIT
+ */
 
 class Homepage extends CI_Controller {
 

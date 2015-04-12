@@ -1,4 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+ * @package		GitHubAPI-CodeIgniter-SemanticUI
+ * @author		Cahyadi Triyansyah (http://sundi3yansyah.com)
+ * @version		0.1
+ * @license		MIT
+ */
 
 class Libraries_datetime {
 
@@ -16,7 +22,7 @@ class Libraries_datetime {
 
 	function getMonthIndonesia($stars)
 	{
-		$month = "";
+		$month = '';
 		switch($stars){
 			case '01':
 				$month = 'Januari';

@@ -1,14 +1,30 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+/**
+ * @package		GitHubAPI-CodeIgniter-SemanticUI
+ * @author		Cahyadi Triyansyah (http://sundi3yansyah.com)
+ * @version		0.1
+ * @license		MIT
+ */
 
 class Homepage extends CI_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
+
+		$this->CI =& get_instance();
+		$this->CI->config->load('config_custom');
 	}
 
 	function index()
+	{
+		$data = array(
+			'repos' => $this->_repos()
+			);
+		$this->load->view('homepage', $data);
+	}
+
+	function _repos()
 	{
 		$user = 'YOUR-USERNAME';
 		$token = 'YOUR-TOKEN-APP';
@@ -19,10 +35,7 @@ class Homepage extends CI_Controller {
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('User-Agent: Awesome-Octocat-App', $curl_token_auth));
 		$get_json = curl_exec($ch); 
 		curl_close($ch);
-		$data = array(
-			'output' => json_decode($get_json)
-			);
-		$this->load->view('homepage', $data);
+		return json_decode($get_json);
 	}
 
 }
