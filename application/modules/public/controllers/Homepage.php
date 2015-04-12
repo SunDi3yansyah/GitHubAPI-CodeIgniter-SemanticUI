@@ -26,8 +26,8 @@ class Homepage extends CI_Controller {
 
 	function _repos()
 	{
-		$user = 'YOUR-USERNAME';
-		$token = 'YOUR-TOKEN-APP';
+		$user = $this->CI->config->item('github_username');
+		$token = $this->CI->config->item('token');
 		$curl_url = 'https://api.github.com/users/' . $user . '/repos';
 		$curl_token_auth = 'Authorization: token ' . $token;
 		$ch = curl_init($curl_url);
