@@ -10,10 +10,10 @@
 <meta name="description" content="<?php echo $this->CI->config->item('description'); ?>">
 <meta name="keywords" content="<?php echo $this->CI->config->item('keywords'); ?>">
 <link rel="icon" href="<?php echo base_url('favicon.png'); ?>">
-<link rel="stylesheet" href="<?php echo base_url('bower_components/Semantic-UI/dist/semantic.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('bower_components/Semantic-UI/dist/semantic.min.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('bower_components/Semantic-UI/examples/homepage.css'); ?>">
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-<script src="<?php echo base_url('bower_components/Semantic-UI/dist/semantic.js'); ?>"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="<?php echo base_url('bower_components/Semantic-UI/dist/semantic.min.js'); ?>"></script>
 <script src="<?php echo base_url('bower_components/Semantic-UI/examples/homepage.js'); ?>"></script>
 <script src="<?php echo base_url('bower_components/typed.js/dist/typed.min.js'); ?>"></script>
 </head>

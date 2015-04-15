@@ -13,7 +13,7 @@ class Homepage extends CI_Controller {
 		parent::__construct();
 
 		$this->CI =& get_instance();
-		$this->CI->config->load('config_custom');
+		$this->CI->config->load('config_custom_test');
 	}
 
 	function index()

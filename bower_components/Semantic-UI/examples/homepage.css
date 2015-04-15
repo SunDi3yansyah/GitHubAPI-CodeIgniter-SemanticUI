@@ -144,8 +144,7 @@ html {
     font-size: 1.5em;
   }
   #home .masthead.segment .information {
-    /*margin-left: 170px;*/
-    margin: 0;
+    margin-left: 170px;
   }
 
   #home .masthead.segment .image {
@@ -182,11 +181,16 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-  #home .masthead i.icon.code {
+  #home .masthead i.icon.code.force {
     display: none;
   }
 }
-
+@media only screen and (max-width : 768px) {
+  #home .masthead.segment .information.force {
+    /*margin-left: 170px;*/
+    margin: 0;
+  }
+}
 .text-editor-wrap {
   color: #1b1c1d;
   display: block;

@@ -28,7 +28,7 @@
     <div class="row">
       <div class="nine wide column left aligned">
         <div class="ui center aligned stackable page grid">
-          <button class="ui teal massive left labeled icon button" id="get_repos_ajax"><i class="github square icon"></i>Get Repository with Ajax</button><br>
+          <button class="get_repos ui teal massive left labeled icon button cmd"><i class="github square icon"></i>Get Repository with Ajax</button><br>
           <div class="ui pointing below green" id="repos_count" style="margin-top: 0.5em;"></div>
         </div>
         <div class="ui styled fluid accordion" id="repo_list" style="box-shadow: none;margin-top: 1em;">
@@ -39,7 +39,7 @@
 </div>
 
 <script>
-$("#get_repos_ajax").click(function() {
+$(".get_repos").click(function() {
   $.ajax({
     type: "GET",
     url: "https://api.github.com/users/<?php echo $this->CI->config->item('github_username'); ?>/repos",
@@ -47,15 +47,19 @@ $("#get_repos_ajax").click(function() {
     success: function(result) {
       for( i in result ) {
         $("#repo_list").append(
-          "<div class='title'><i class='dropdown icon'></i>" + result[i].name + "<p class='ui blue tag label' style='float: right;'>" + result[i].language + "</p></div><div class='content'><p>" + result[i].description + "</p><p class='ui label purple'><i class='fork icon'></i> " + result[i].forks_count + "</p><p class='ui label purple'><i class='star icon'></i> " + result[i].stargazers_count + "</p><a class='ui red label' target='_blank' href='" + result[i].html_url + "'>Go to Repository</a></div>"
+          "<div class='title'><i class='dropdown icon'></i>" + result[i].name + "<p class='ui blue tag label' style='float: right;'>" + result[i].language + "</p></div><div class='content'><p>" + result[i].description + "</p><p class='ui label purple'><i class='fork icon'></i> " + result[i].forks_count + "</p><p class='ui label purple'><i class='star icon'></i> " + result[i].stargazers_count + "</p><div class='ui mini labeled input' style='width:100%;margin-top:1em;'><div class='ui label'><i class='lock icon' style='color:#5bbd72;'> https://</i></div><input type='text' value='github.com/" + result[i].full_name + "'></div></div>"
           );
-        console.log("i: " + i);
+        // For debug result by ID
+        // console.log("i: " + i);
       }
       console.log(result);
+      $('.cmd').removeClass('loading');
+      $('.cmd').addClass('disabled');
       $('.ui.pointing.green').addClass('label');
       $("#repos_count").append("Total " + result.length + " Repository");
     }
   });
+  $('.cmd').addClass('loading');
 });
 </script>
 <?php $this->load->view('must/footer'); ?>

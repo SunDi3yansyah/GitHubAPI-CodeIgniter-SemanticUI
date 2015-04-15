@@ -5,7 +5,7 @@
     <div class="column">
       <?php $this->load->view('must/menu'); ?>
       <i class="red icon code force"></i>
-      <div class="ui hidden transition information">
+      <div class="ui hidden transition information force">
         <h1 class="none ui inverted header">
           <?php echo $this->CI->config->item('website_name'); ?>
         </h1>
