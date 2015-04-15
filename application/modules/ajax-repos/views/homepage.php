@@ -20,7 +20,7 @@
     <div class="row">
       <div class="column">
         <h1 class="ui inverted header">
-          Ajax List Respository on GitHub
+          Ajax List Repository on GitHub
         </h1>
         <div class="ui inverted horizontal divider"><i class="github icon" style="font-size:5em;"></i></div>
       </div>
