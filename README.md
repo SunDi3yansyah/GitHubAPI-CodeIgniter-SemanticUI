@@ -1,6 +1,20 @@
 GitHub API - CodeIgniter - SemanticUI
 ==================
 
+```
+                   ____   _   _     _   _           _     
+                  / ___| (_) | |_  | | | |  _   _  | |__  
+                 | |  _  | | | __| | |_| | | | | | | '_ \ 
+                 | |_| | | | | |_  |  _  | | |_| | | |_) |
+                  \____| |_|  \__| |_| |_|  \__,_| |_.__/ 
+                                                          
+                 __                   _                   
+                (_   _   _ o  _. |   /   _   _| o ._   _  
+                __) (_) (_ | (_| |   \_ (_) (_| | | | (_| 
+                                                       _| 
+
+```
+
 This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
 
 ## Dependency

@@ -9,12 +9,12 @@
         <h1 class="none ui inverted header">
           <?php echo $this->CI->config->item('website_name'); ?>
         </h1>
-    <div class="text-editor-wrap">
-      <div class="title-bar"><span class="title"><?php echo $this->CI->config->item('github_username'); ?> - <?php echo $hash; ?> &mdash; bash</span></div>
-      <div class="text-body">
-        $ # <p class="about" style="display: inline;white-space: pre;"></p>
-      </div>
-    </div>
+        <div class="text-editor-wrap">
+          <div class="title-bar"><span class="title"><?php echo $this->CI->config->item('github_username'); ?> - <?php echo sha1(uniqid($this->CI->config->item('github_username'))); ?> &mdash; bash</span></div>
+          <div class="text-body">
+            $ # <p class="about" style="display: inline;white-space: pre;"></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -96,15 +96,4 @@
   </div>
 </div>
 
-<script>
-$(function(){
-  $(".about").typed({
-    strings: [<?php echo $this->CI->config->item('about_typed'); ?>],
-    typeSpeed: 30,
-    backDelay: 500,
-    loop: false,
-    loopCount: false,
-    });
-});
-</script>
 <?php $this->load->view('must/footer'); ?>

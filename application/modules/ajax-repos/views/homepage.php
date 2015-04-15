@@ -4,12 +4,17 @@
   <div class="ui page grid">
     <div class="column">
       <?php $this->load->view('must/menu'); ?>
-      <i class="red icon code"></i>
-      <div class="ui hidden transition information">
-        <h1 class="ui inverted header">
+      <i class="red icon code force"></i>
+      <div class="ui hidden transition information force">
+        <h1 class="none ui inverted header">
           <?php echo $this->CI->config->item('website_name'); ?>
         </h1>
-        <p><?php echo $this->CI->config->item('about'); ?></p>
+        <div class="text-editor-wrap">
+          <div class="title-bar"><span class="title"><?php echo $this->CI->config->item('github_username'); ?> - <?php echo sha1(uniqid($this->CI->config->item('github_username'))); ?> &mdash; bash</span></div>
+          <div class="text-body">
+            $ # <p class="about" style="display: inline;white-space: pre;"></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

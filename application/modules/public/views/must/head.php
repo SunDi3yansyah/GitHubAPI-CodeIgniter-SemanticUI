@@ -22,4 +22,15 @@
 <script src="<?php echo base_url('bower_components/Semantic-UI/dist/semantic.min.js'); ?>"></script>
 <script src="<?php echo base_url('bower_components/Semantic-UI/examples/homepage.js'); ?>"></script>
 <script src="<?php echo base_url('bower_components/typed.js/dist/typed.min.js'); ?>"></script>
+<script>
+$(function(){
+  $(".about").typed({
+    strings: [<?php echo $this->CI->config->item('about_typed'); ?>],
+    typeSpeed: 30,
+    backDelay: 500,
+    loop: false,
+    loopCount: false,
+    });
+});
+</script>
 </head>
