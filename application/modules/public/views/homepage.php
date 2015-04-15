@@ -10,7 +10,7 @@
           <?php echo $this->CI->config->item('website_name'); ?>
         </h1>
     <div class="text-editor-wrap">
-      <div class="title-bar"><span class="title"><?php echo $hash; ?> &mdash; bash</span></div>
+      <div class="title-bar"><span class="title"><?php echo $this->CI->config->item('github_username'); ?> - <?php echo $hash; ?> &mdash; bash</span></div>
       <div class="text-body">
         $ # <p class="about" style="display: inline;white-space: pre;"></p>
       </div>

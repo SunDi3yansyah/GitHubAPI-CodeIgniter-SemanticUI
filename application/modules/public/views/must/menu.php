@@ -1,5 +1,5 @@
 <div class="ui inverted menu">
-  <a class="header item" href="<?php echo base_url(); ?>"><?php echo $this->CI->config->item('title'); ?></a>
+  <a class="header item" href="<?php echo base_url(); ?>"><?php echo $this->CI->config->item('title_default'); ?></a>
   <div class="right menu">
     <div class="ui mobile dropdown link item">
       Menu

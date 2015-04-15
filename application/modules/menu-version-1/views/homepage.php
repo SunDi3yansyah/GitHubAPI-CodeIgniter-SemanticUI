@@ -5,7 +5,7 @@
   <div class="ui page grid">
     <div class="column">
       <div class="ui inverted menu">
-        <div class="header item"><?php echo $this->CI->config->item('title'); ?></div>
+        <a class="header item" href="<?php echo base_url(); ?>"><?php echo $this->CI->config->item('title_default'); ?></a>
         <?php $this->load->view('must/menu'); ?>
       </div>
       <i class="red icon code"></i>

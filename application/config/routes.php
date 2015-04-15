@@ -50,5 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'public/homepage';
+$route['ajax-repos'] = 'ajax-repos/homepage';
+$route['menu-version-1'] = 'menu-version-1/homepage';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

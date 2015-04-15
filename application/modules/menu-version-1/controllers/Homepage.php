@@ -20,6 +20,7 @@ class Homepage extends CI_Controller {
 	{
 		$data['repo'] = 'https://github.com/'.$this->CI->config->item('github_username').'/GitHubAPI-CodeIgniter-SemanticUI/tree/master/application/modules/menu-version-1';
 		$data['homepage'] = 'active';
+		$data['title'] = 'Menu Active / DeActive CodeIgniter - '.$this->CI->config->item('github_username').'';
 		$this->load->view('homepage', $data);
 	}
 
@@ -27,6 +28,7 @@ class Homepage extends CI_Controller {
 	{
 		$data['repo'] = 'https://github.com/'.$this->CI->config->item('github_username').'/GitHubAPI-CodeIgniter-SemanticUI/tree/master/application/modules/menu-version-1';
 		$data['menu1'] = 'active';
+		$data['title'] = 'Menu Active / DeActive CodeIgniter - '.$this->CI->config->item('github_username').'';
 		$this->load->view('menu1', $data);
 	}
 
@@ -34,6 +36,7 @@ class Homepage extends CI_Controller {
 	{
 		$data['repo'] = 'https://github.com/'.$this->CI->config->item('github_username').'/GitHubAPI-CodeIgniter-SemanticUI/tree/master/application/modules/menu-version-1';
 		$data['menu2'] = 'active';
+		$data['title'] = 'Menu Active / DeActive CodeIgniter - '.$this->CI->config->item('github_username').'';
 		$this->load->view('menu2', $data);
 	}
 
@@ -41,6 +44,7 @@ class Homepage extends CI_Controller {
 	{
 		$data['repo'] = 'https://github.com/'.$this->CI->config->item('github_username').'/GitHubAPI-CodeIgniter-SemanticUI/tree/master/application/modules/menu-version-1';
 		$data['menu3'] = 'active';
+		$data['title'] = 'Menu Active / DeActive CodeIgniter - '.$this->CI->config->item('github_username').'';
 		$this->load->view('menu3', $data);
 	}
 

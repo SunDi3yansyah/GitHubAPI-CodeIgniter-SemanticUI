@@ -19,6 +19,7 @@ class Homepage extends CI_Controller {
 	function index()
 	{
 		$data['repo'] = 'https://github.com/'.$this->CI->config->item('github_username').'/GitHubAPI-CodeIgniter-SemanticUI/tree/master/application/modules/ajax-repos';
+		$data['title'] = 'Ajax List Repository on GitHub #CodeIgniter #SemanticUI - '.$this->CI->config->item('github_username').'';
 		$this->load->view('homepage', $data);
 	}
 
