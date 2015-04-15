@@ -21,6 +21,7 @@ class Homepage extends CI_Controller {
 		$data = array(
 			'repos'	=> $this->_repos(),
 			'repo'	=> 'https://github.com/'.$this->CI->config->item('github_username').'/GitHubAPI-CodeIgniter-SemanticUI',
+			'hash' => sha1(uniqid($this->CI->config->item('github_username'))),
 			);
 		$this->load->view('homepage', $data);
 	}

@@ -35,8 +35,8 @@ This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
         ```
     - You will see code like this
     ```
-    $user = 'YOUR-USERNAME';
-    $token = 'YOUR-TOKEN-APP';
+    $config['token'] = 'SHA1';
+    $config['github_username'] = 'your-username';
     ```
     - Change the value with your token and username from GitHub
     - Open this link https://github.com/settings/applications

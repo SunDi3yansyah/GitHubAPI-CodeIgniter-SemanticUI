@@ -25,6 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "Semantic-UI": "~1.11.6"
+    "Semantic-UI": "~1.11.6",
+    "typed.js": "mattboldt/typed.js"
   }
 }

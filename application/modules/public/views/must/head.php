@@ -15,4 +15,5 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
 <script src="<?php echo base_url('bower_components/Semantic-UI/dist/semantic.js'); ?>"></script>
 <script src="<?php echo base_url('bower_components/Semantic-UI/examples/homepage.js'); ?>"></script>
+<script src="<?php echo base_url('bower_components/typed.js/dist/typed.min.js'); ?>"></script>
 </head>
