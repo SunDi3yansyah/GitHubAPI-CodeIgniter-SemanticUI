@@ -1,3 +1,16 @@
+/*
+ ____              ____  _ _____                                   _     
+/ ___| _   _ _ __ |  _ \(_)___ / _   _  __ _ _ __  ___ _   _  __ _| |__  
+\___ \| | | | '_ \| | | | | |_ \| | | |/ _` | '_ \/ __| | | |/ _` | '_ \ 
+ ___) | |_| | | | | |_| | |___) | |_| | (_| | | | \__ \ |_| | (_| | | | |
+|____/ \__,_|_| |_|____/|_|____/ \__, |\__,_|_| |_|___/\__, |\__,_|_| |_|
+                                 |___/                 |___/             
+
+|--------------------------------------------------------------------------
+|              IMPORTANT! CSS has been doing a lot of change
+|--------------------------------------------------------------------------
+                                                                         */
+
 /*******************************
             Global
 *******************************/
@@ -21,7 +34,7 @@ html {
 
 #home .ui.inverted.segment.force {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   margin-bottom: 0px;
   border-bottom: none;
@@ -29,8 +42,8 @@ html {
   background-color: #009189 !important;
   background-image: radial-gradient(farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   background-position: 50% 50%;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  /*-webkit-transform: translate3d(0, 0, 0);*/
+  /*transform: translate3d(0, 0, 0);*/
 
   -ms-transition: background-color 3s ease-in-out 1s;
   -moz-transition: background-color 3s ease-in-out 1s;
@@ -161,4 +174,8 @@ html {
   #home .selection.list .right.floated {
     display: none;
   }
+}
+
+.ui.accordion p {
+  color: rgba(0, 0, 0, 0.8);
 }

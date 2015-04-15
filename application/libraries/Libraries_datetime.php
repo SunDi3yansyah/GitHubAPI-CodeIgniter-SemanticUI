@@ -16,7 +16,10 @@ class Libraries_datetime {
 		$hour = substr($stars,11,2);
 		$minute = substr($stars,14,2);
 		$formatMonth = $this->getMonthIndonesia($month);
-		$icon = array('clock'=>'<i class="wait icon"></i>','calendar'=>'<i class="calendar icon"></i>');
+		$icon = array(
+			'clock'		=>	'<i class="wait icon"></i>',
+			'calendar'	=>	'<i class="calendar icon"></i>'
+			);
 		return $icon['calendar'].' '.$date.' '.$formatMonth.' '.$year.' '.$icon['clock'].' '.$hour.':'.$minute;
 	}
 

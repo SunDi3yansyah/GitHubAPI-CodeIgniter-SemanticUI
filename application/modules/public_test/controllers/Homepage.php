@@ -13,14 +13,13 @@ class Homepage extends CI_Controller {
 		parent::__construct();
 
 		$this->CI =& get_instance();
-		$this->CI->config->load('config_custom');
+		$this->CI->config->load('config_custom_test');
 	}
 
 	function index()
 	{
 		$data = array(
-			'repos'	=> $this->_repos(),
-			'repo'	=> 'https://github.com/'.$this->CI->config->item('github_username').'/GitHubAPI-CodeIgniter-SemanticUI',
+			'repos' => $this->_repos()
 			);
 		$this->load->view('homepage', $data);
 	}

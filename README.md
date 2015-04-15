@@ -1,4 +1,4 @@
-SunDi3yansyah
+GitHub API - CodeIgniter - SemanticUI
 ==================
 
 This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
@@ -34,18 +34,18 @@ This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
         ../application/modules/public/controllers/Homepage.php
         ```
     - You will see code like this
-        ```
-        $user = 'YOUR-USERNAME';
-        $token = 'YOUR-TOKEN-APP';
-        ```
-        - Change the value with your token and username from GitHub
-        - Open this link https://github.com/settings/applications
-        - you will see a box section __Personal access tokens__
-        - Click button __Generate new token__
-        - Enter your desired __Token description__
-        - Enter your desired __Select scopes__
-        - Click __Generate token__
-        - Copy token that you just made to the file __Homepage.php__
+    ```
+    $user = 'YOUR-USERNAME';
+    $token = 'YOUR-TOKEN-APP';
+    ```
+    - Change the value with your token and username from GitHub
+    - Open this link https://github.com/settings/applications
+    - you will see a box section __Personal access tokens__
+    - Click button __Generate new token__
+    - Enter your desired __Token description__
+    - Enter your desired __Select scopes__
+    - Click __Generate token__
+    - Copy token that you just made to the file __Homepage.php__
 - Step 3
     - Edit file
     ```
