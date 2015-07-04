@@ -45,7 +45,7 @@ This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
 - Step 2
     - Edit file
         ```
-        ../application/modules/public/controllers/Homepage.php
+        ../application/config/config_custom.php
         ```
     - You will see code like this
     ```
