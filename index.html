@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>GitHubAPI -&gt; CodeIgniter -&gt; Semantic-UI by SunDi3yansyah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">GitHubAPI -&gt; CodeIgniter -&gt; Semantic-UI</h1>
+      <h2 class="project-tagline">Showcase built with using GitHub API :octocat:, CodeIgniter HMVC :fire:, and frontend framework Semantic-UI :gem:</h2>
+      <a href="https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI" class="btn">View on GitHub</a>
+      <a href="https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="github-api---codeigniter---semanticui" class="anchor" href="#github-api---codeigniter---semanticui" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub API - CodeIgniter - SemanticUI</h1>
+
+<pre><code>                   ____   _   _     _   _           _     
+                  / ___| (_) | |_  | | | |  _   _  | |__  
+                 | |  _  | | | __| | |_| | | | | | | '_ \ 
+                 | |_| | | | | |_  |  _  | | |_| | | |_) |
+                  \____| |_|  \__| |_| |_|  \__,_| |_.__/ 
+
+                 __                   _                   
+                (_   _   _ o  _. |   /   _   _| o ._   _  
+                __) (_) (_ | (_| |   \_ (_) (_| | | | (_| 
+                                                       _| 
+
+</code></pre>
+
+<p>This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.</p>
+
+<h2>
+<a id="dependency" class="anchor" href="#dependency" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependency</h2>
+
+<ul>
+<li><a href="https://github.com/bcit-ci/CodeIgniter">CodeIgniter</a></li>
+<li><a href="https://github.com/Semantic-Org/Semantic-UI">Semantic UI</a></li>
+<li><a href="https://github.com/GitHubIndonesia/list-repository">GitHub API (GitHubIndonesia - list-repository)</a></li>
+</ul>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<ul>
+<li>
+<p>Step 1</p>
+
+<ul>
+<li>Zip ball
+
+<ul>
+<li><a href="https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI/archive/master.zip">Download this repository.</a></li>
+<li>Move all file to your web server directory.</li>
+</ul>
+</li>
+<li>Clone repository:
+
+<ul>
+<li>Open your command line.</li>
+<li>Move to your web server directory.</li>
+</ul>
+
+<pre><code>git clone https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI
+</code></pre>
+</li>
+<li>Bower
+
+<ul>
+<li>Open your command line.</li>
+<li>Move to your web server directory.</li>
+</ul>
+
+<pre><code>bower install SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Step 2</p>
+
+<ul>
+<li>Edit file
+<code>
+../application/modules/public/controllers/Homepage.php
+</code>
+</li>
+<li>You will see code like this</li>
+</ul>
+
+<pre><code>$config['token'] = 'SHA1';
+$config['github_username'] = 'your-username';
+</code></pre>
+
+<ul>
+<li>Change the value with your token and username from GitHub</li>
+<li>Open this link <a href="https://github.com/settings/applications">https://github.com/settings/applications</a>
+</li>
+<li>you will see a box section <strong>Personal access tokens</strong>
+</li>
+<li>Click button <strong>Generate new token</strong>
+</li>
+<li>Enter your desired <strong>Token description</strong>
+</li>
+<li>Enter your desired <strong>Select scopes</strong>
+</li>
+<li>Click <strong>Generate token</strong>
+</li>
+<li>Copy token that you just made to the file <strong>Homepage.php</strong>
+</li>
+</ul>
+</li>
+<li>Step 3
+
+<ul>
+<li>Edit file</li>
+</ul>
+
+<pre><code>../application/config/config_custom.php
+</code></pre>
+
+<ul>
+<li>Change according to what you want, I hope you can fill in all fields</li>
+<li>Finished you can see the results by pointing the browser to <code>http://localhost</code> / <code>http://localhost/project</code> / <code>http://your.site</code> / etc... up to you.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<ul>
+<li><a href="LICENSE">MIT</a></li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI">GitHubAPI -&gt; CodeIgniter -&gt; Semantic-UI</a> is maintained by <a href="https://github.com/SunDi3yansyah">SunDi3yansyah</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
