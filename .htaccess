@@ -1,20 +1,28 @@
-RewriteEngine On
-Options +FollowSymLinks -Indexes
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	Options +FollowSymLinks -Indexes
 
-# uncomment the following lines to force HTTPS
-RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+	RedirectMatch 403 ^/(\.git).*$
 
-# removes trailing slashes
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/$ /$1 [L,R=301]
+	RedirectMatch ^/sundi3yansyah.id/(.*)$ https://sundi3yansyah.id/$1
 
-# remove index.php from URL
-RewriteCond $1 !^(index\.php|bower_components|robots\.txt)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.php/$1 [L]
+    # Reenable after getting ssl cert
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
-# ErrorDocument 403 /error_403.php
+    # Enable WWW
+    # RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [nocase]
+    # RewriteRule ^(.*) https://sundi3yansyah.id/$1 [last,redirect=301]
 
-Header set X-XSS-Protection "1; mode=block"
+    # Disable WWW
+    RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [NC]
+    RewriteRule (.*) https://sundi3yansyah.id/$1 [L,R=301]
+
+    # Removes trailing slashes
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+</IfModule>
