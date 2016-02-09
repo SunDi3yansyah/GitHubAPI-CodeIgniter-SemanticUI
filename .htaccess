@@ -1,0 +1,20 @@
+RewriteEngine On
+Options +FollowSymLinks -Indexes
+
+# uncomment the following lines to force HTTPS
+RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# removes trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+# remove index.php from URL
+RewriteCond $1 !^(index\.php|bower_components|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+# ErrorDocument 403 /error_403.php
+
+Header set X-XSS-Protection "1; mode=block"
