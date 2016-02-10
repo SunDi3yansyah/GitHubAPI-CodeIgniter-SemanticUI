@@ -1,28 +1,28 @@
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-	Options +FollowSymLinks -Indexes
+# <IfModule mod_rewrite.c>
+# 	RewriteEngine On
+# 	Options +FollowSymLinks -Indexes
 
-	RedirectMatch 403 ^/(\.git).*$
+# 	RedirectMatch 403 ^/(\.git).*$
 
-	RedirectMatch ^/sundi3yansyah.id/(.*)$ https://sundi3yansyah.id/$1
+# 	RedirectMatch ^/sundi3yansyah.id/(.*)$ https://sundi3yansyah.id/$1
 
-    # Reenable after getting ssl cert
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+#     # Reenable after getting ssl cert
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
-    # Enable WWW
-    # RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [nocase]
-    # RewriteRule ^(.*) https://sundi3yansyah.id/$1 [last,redirect=301]
+#     # Enable WWW
+#     # RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [nocase]
+#     # RewriteRule ^(.*) https://sundi3yansyah.id/$1 [last,redirect=301]
 
-    # Disable WWW
-    RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [NC]
-    RewriteRule (.*) https://sundi3yansyah.id/$1 [L,R=301]
+#     # Disable WWW
+#     RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [NC]
+#     RewriteRule (.*) https://sundi3yansyah.id/$1 [L,R=301]
 
-    # Removes trailing slashes
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.+)/$ /$1 [L,R=301]
-</IfModule>
+#     # Removes trailing slashes
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteRule ^(.+)/$ /$1 [L,R=301]
+# </IfModule>
 
-<IfModule mod_headers.c>
-	Header set X-XSS-Protection "1; mode=block"
-</IfModule>
+# <IfModule mod_headers.c>
+# 	Header set X-XSS-Protection "1; mode=block"
+# </IfModule>
