@@ -4,7 +4,7 @@
 	Options +FollowSymLinks -Indexes
 
 	# RewriteCond %{HTTPS} off
-	RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+	# RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
 	# Enable WWW
 	# RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [nocase]
