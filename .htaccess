@@ -11,8 +11,8 @@
 	# RewriteRule ^(.*) https://sundi3yansyah.id/$1 [last,redirect=301]
 
 	# Disable WWW
-	RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [NC]
-	RewriteRule (.*) https://sundi3yansyah.id/$1 [L,R=301]
+	# RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [NC]
+	# RewriteRule (.*) https://sundi3yansyah.id/$1 [L,R=301]
 
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.+)/$ /$1 [L,R=301]
@@ -23,7 +23,7 @@
 	RewriteCond %{REQUEST_URI} ^app.*
 	RewriteRule ^(.*)$ /index.php/$1 [L]
 
-	RewriteCond $1 !^(index\.php|assets|robots\.txt)
+	RewriteCond $1 !^(index\.php|bower_components|robots\.txt)
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)$ index.php/$1 [L,QSA]
