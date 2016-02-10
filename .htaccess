@@ -14,9 +14,6 @@
 	# RewriteCond %{HTTP_HOST} ^www.sundi3yansyah.id [NC]
 	# RewriteRule (.*) https://sundi3yansyah.id/$1 [L,R=301]
 
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^(.+)/$ /$1 [L,R=301]
-
 	RewriteCond %{REQUEST_URI} ^../sys.*
 	RewriteRule ^(.*)$ /index.php/$1 [L]
 
