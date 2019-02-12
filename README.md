@@ -1,19 +1,4 @@
-GitHub API - CodeIgniter - SemanticUI
-==================
-
-```
-                   ____   _   _     _   _           _     
-                  / ___| (_) | |_  | | | |  _   _  | |__  
-                 | |  _  | | | __| | |_| | | | | | | '_ \ 
-                 | |_| | | | | |_  |  _  | | |_| | | |_) |
-                  \____| |_|  \__| |_| |_|  \__,_| |_.__/ 
-                                                          
-                 __                   _                   
-                (_   _   _ o  _. |   /   _   _| o ._   _  
-                __) (_) (_ | (_| |   \_ (_) (_| | | | (_| 
-                                                       _| 
-
-```
+# GitHub API - CodeIgniter - SemanticUI
 
 This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
 
@@ -47,13 +32,17 @@ This applications built with CodeIgniter V3 + HMVC, Gihub API, Semantic UI.
         ```
         ../application/config/config_custom.php
         ```
+    - Set environment variable
+    ```
+    export PERSONAL_ACCESS_TOKEN=f013d66c7f6817d08b7e...
+    ```
     - You will see code like this
     ```
-    $config['token'] = 'SHA1';
+    $config['token'] = getenv('PERSONAL_ACCESS_TOKEN');
     $config['github_username'] = 'your-username';
     ```
     - Change the value with your token and username from GitHub
-    - Open this link https://github.com/settings/applications
+    - Open this link https://github.com/settings/tokens
     - you will see a box section __Personal access tokens__
     - Click button __Generate new token__
     - Enter your desired __Token description__
